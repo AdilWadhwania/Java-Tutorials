@@ -1,4 +1,4 @@
-package com.java.concurrency.exanple.odd.even;
+package com.java.concurrency.example.odd.even;
 
 /** Counter class Info
  * In this class we have a counter variable that is accessed by the

@@ -1,4 +1,4 @@
-package com.java.concurrency.exanple.odd.even;
+package com.java.concurrency.example.odd.even;
 
 public class OddThread implements Runnable
 {

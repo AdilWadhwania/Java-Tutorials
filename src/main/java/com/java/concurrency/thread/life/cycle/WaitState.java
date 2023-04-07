@@ -1,6 +1,6 @@
 package com.java.concurrency.thread.life.cycle;
 
-/*
+/*  Message Class Info
 * Message object contains a string that holds the message
 * We have a constructor and getter & setter method for the private message field
 * */
@@ -63,11 +63,17 @@ public class WaitState
 * */
 class Waiter implements Runnable
 {
-    private static Message message;
+    private final Message message;
     public Waiter(Message message)
     {
         this.message = message;
     }
+
+    /**  Run Method Info
+     * In this run method, the thread execution method of java it will first print
+     * the thread that will wait until it is notified and then the wait method is called
+     * so the current executing object releases the monitor on the message object and waits.
+     */
     public void run()
     {
         //the thread that first enters into this synchronized block will acquire the lock on the message object
@@ -92,12 +98,18 @@ class Waiter implements Runnable
 * */
 class Notifier implements Runnable
 {
-    private Message message;
+    private final Message message;
     public Notifier(Message message)
     {
         this.message = message;
     }
 
+    /** Run Method info
+     *  In this run method the thread that acquires the monitor of the message
+     *  object will modify the message of that object using set method and then
+     *  after completing task will notify all the threads waiting for that thread
+     *  object using notifyAll() method.
+     */
     public void run()
     {
         // The thread that enters the synchronized block first will acquire lock on message object

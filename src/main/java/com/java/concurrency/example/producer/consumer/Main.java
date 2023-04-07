@@ -1,2 +1,4 @@
-package com.java.concurrency.example.producer.consumer;public class Main {
+package com.java.concurrency.example.producer.consumer;
+
+public class Main {
 }

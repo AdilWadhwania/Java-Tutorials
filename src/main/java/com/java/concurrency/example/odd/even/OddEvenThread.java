@@ -1,4 +1,4 @@
-package com.java.concurrency.exanple.odd.even;
+package com.java.concurrency.example.odd.even;
 
 /*  Example overview
 *  In this example we want to print the odd numbers by odd thread

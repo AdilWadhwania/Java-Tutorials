@@ -1,6 +1,11 @@
 package com.java.array;
 
-public class ArrayPractice
+/**
+ * In this class we will see about one-dimensional
+ * array in java, how to declare, assign values,
+ * print the values and update the value in one dimensional array
+ */
+public class OneDimensionalArray
 {
     public static void main(String[] args)
     {

@@ -1,6 +1,6 @@
 package com.java.concurrency;
 
-/*
+/**
 * In this class we are going to see about join in java
 * Whenever a current executing thread encounters join method from an X thread then the current executing thread will wait
 * until the X thread's execution is completed.
